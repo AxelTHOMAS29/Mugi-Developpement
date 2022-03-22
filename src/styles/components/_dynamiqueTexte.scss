@@ -1,0 +1,112 @@
+.dynamic-text {
+    position: relative;
+    display: flex;
+    font-size: 65px;
+    margin-left: 25%;
+    margin-top: 150px;
+
+    @media screen and (max-width: 1000px){
+      margin-top: 200px;
+      margin-left: 10%;
+      margin-right: 0px;
+      width: 90%;
+      flex-wrap: nowrap;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 545px){
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 500px){
+      font-size: 40px;
+    }
+
+    @media screen and (max-width: 475px){
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 430px){
+      margin-left: 0px;
+      margin-top: 90px;
+      font-size: 40px;
+      flex-direction: column;
+      align-items: center;
+
+    }
+
+  
+    .simply {
+      color: $color-1;
+      padding-left: 100px;
+
+      @media screen and (max-width: 1000px){
+        font-size: 60%;
+        padding-left: 10%;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+
+      @media screen and (max-width: 570px){
+        padding-left: 3%;
+        font-size: 50%;
+      }
+
+      @media screen and (max-width: 430px){
+        padding-left: 0px;
+        font-size: 50px;
+      }
+    }
+  
+    #text-target {
+      display: flex;
+      width: 300px;
+      text-align: left;
+      animation: color 30s alternate infinite;
+      perspective: 200px;
+      transform: translateX(26px);
+
+      @media screen and (max-width: 1000px){
+        font-size: 60%;
+      }
+      
+      @media screen and (max-width: 570px){
+        font-size: 50%;
+      }
+
+      @media screen and (max-width: 430px){
+        align-items: center;
+        text-align: center;
+        margin-left: 20%;
+        font-size: 50px;
+      }
+    }
+    .word {
+      position: absolute;
+    }
+    @keyframes color {
+      0% {
+        color: $color-2;
+      }
+      50% {
+        color: $color-1;
+      }
+      100% {
+        color: $color-2;
+      }
+    }
+
+    .letter {
+      transform: translateZ(100px);
+    }
+    @keyframes anima {
+      25% {
+        transform: translateZ(0px);
+        opacity: 1;
+      }
+      32% {
+        opacity: 0;
+        transform: translateZ(-150px) translateX(200px);
+      }
+    }
+  }

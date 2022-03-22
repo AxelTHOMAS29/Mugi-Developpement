@@ -1,0 +1,85 @@
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; 
+  border-radius: 5px;
+  margin-top: 150px;
+
+  @media screen and (max-width: 1000px){
+    margin-top: 80px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (max-width: 511px){
+    margin-top: 90px;
+  }
+
+  @media screen and (max-width: 430px){
+    margin-top: 80px;
+  }
+}
+
+.textContactForm {
+  animation: coloar 30s alternate infinite;
+  display: flex;
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-decoration-line: underline;
+
+  @media screen and (max-width: 1000px){
+    text-align: center;
+    font-size: 140%;
+  }
+}
+
+@keyframes coloar {
+  0% {
+    color: $color-2;
+  }
+  50% {
+    color: $color-1;
+  }
+  100% {
+    color: $color-2;
+  }
+}
+
+input, textarea {
+  background-color: grey;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  height: 30px;
+  width: 30%;
+  cursor: context-menu;
+
+  @media screen and (max-width: 1000px){
+    width: 80%;
+  }
+}
+
+
+::placeholder {
+  color: white;
+}
+
+input {
+  border-radius: 5px;
+  border: none;
+}
+
+
+.messageForm {
+  resize: none;
+  height: 100px;
+  border-radius: 5px;
+  border: none;
+}
+
+.ButtonEnvoyer {
+  width: min-content;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: grey;
+  font-size: 22px;
+}

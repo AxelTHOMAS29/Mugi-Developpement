@@ -1,0 +1,15 @@
+.cookies {
+    margin-top: 30vh;
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 430px){
+        margin-top: 15vh;
+      }
+
+
+    .charte {
+        display: none;
+}
+
+}

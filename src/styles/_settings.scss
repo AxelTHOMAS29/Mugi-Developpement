@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+
+$font-1: "Poppins", sans-serif;
+
+$color-1: #fdfdfd;
+$color-2: rgb(233, 23, 0);
+$color-3: #282c34;
+$white: rgb(243, 243, 243);
+$grey: #717D7E;
+
+@mixin verticalCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-left: 2%;
+  margin-right: 2%;
+  background: $color-3;
+  color: $white;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+li {
+  list-style-type: none;
+}
+
+textarea {
+  resize: none;
+}
