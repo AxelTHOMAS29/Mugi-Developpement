@@ -149,7 +149,7 @@ const PortFolio = () => {
     }, [])
 
     useEffect(() => {
-        slideInBottom2('.mugiTexte');
+        slideInBottom3('.mugiTexte');
     }, [])
 
 
@@ -163,19 +163,19 @@ const PortFolio = () => {
                 <div className='folioGroupe1'>
                     <div className='RiseToWar'>
                         <a href='https://mugidev.go.yj.fr/index.html' rel="noreferrer lien vers mon site Rise To War" target="_blank" className='linkRiseToWar'>
-                            <img src='./img/rise.png' className='riseIMG'></img></a>
+                            <img src='./img/war.png' alt='projet web Rise to War' className='riseIMG folioIMG'></img></a>
                         <span className='riseTexte'>Projet Rise to War
                             <br />HTML - CSS - JavaScrip - JQwerty</span>
                     </div>
                     <div className='reservia'>
                         <a href='https://axelthomas29.github.io/Projet-reservia/' rel="noreferrer lien vers mon site Reservia" target="_blank" className='linkReservia'>
-                            <img src='./img/création.png' className='reserviaIMG'></img></a>
+                            <img src='./img/creation.png' alt='projet web reservia' className='reserviaIMG folioIMG'></img></a>
                         <span className='reserviaTexte'>Projet Reservia (OpenClassrooms)
                             <br />HTML - CSS</span>
                     </div>
                 </div>
                 <div className='mugiPorte'>
-                    <img src='./img/Logo_noir.png' className='mugiIMG'></img>
+                    <img src='./img/Logo_noir.png' alt='logo Mugi Développement' className='mugiIMG'></img>
                     <span className='mugiTexte'>
                         Ce site est réalisé avec ReactJs.
                         <br />D'autres projets suivront bientôt.

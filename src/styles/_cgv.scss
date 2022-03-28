@@ -1,0 +1,42 @@
+.cgv {
+    
+    .cgvTexte {
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .tarif {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .iconTarif {
+        color: $color-1;
+        width: min-content;
+        margin-top: 20px;
+        margin-left: 10%;
+        transition: 2s;
+    }
+
+    .fa-dragon {
+        height: 100px;
+        transition: 2s;
+    }
+
+    .iconTarif:hover {
+        color: $color-2;
+        transform: skew(-15deg, -15deg);
+    }
+
+    .imgTarif {
+        width: 80%;
+        object-fit: cover;
+        border-radius: 50px;
+    }
+
+    .charte {
+        position: absolute;
+        border-bottom: auto;
+    }
+}

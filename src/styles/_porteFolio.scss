@@ -24,7 +24,6 @@
     .RiseToWar {
         display: flex;
         width: 100%;
-        //flex-direction: column;
         justify-content: center;
         align-items: center;
 
@@ -103,6 +102,11 @@
     .mugiIMG {
         width: 35%;
         margin-right: 10%;
+    }
+
+    .folioIMG:hover {
+        border-radius: 40px;
+        transition: 1s;
     }
 
 }

@@ -18,14 +18,14 @@
     }
 
     .icon {
-        color: white;
+        color: $color-1;
     }
 
     .fa-linkedin, .fa-twitter {
         height: 80px;
         margin-bottom: 20px;
         animation: animaFA 1s smooth;
-        transition: 1s;
+        transition: 1s ease;
         position: absolute;
         
     }
@@ -40,7 +40,5 @@
 
     .fa-linkedin:hover, .fa-twitter:hover {
         height: 70px;
-        transition: 1s;
-
     }
 }

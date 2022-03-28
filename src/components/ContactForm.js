@@ -6,12 +6,10 @@ export const ContactForm = () => {
   const form = useRef();
   let formMess = document.querySelector(".form-message");
 
-  const [toSend, setToSend] = useState({
-    name: '',
-    company: '',
-    message: '',
-    email: '',
-  });
+  const [name, setName] = useState("");
+  const [company, setCompany] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -24,12 +22,17 @@ export const ContactForm = () => {
         formMess.style.opacity = "1";
         formMess.style.margin = '20px';
         formMess.style.borderRadius = "5px";
+
+        setName("");
+        setCompany("");
+        setEmail("");
+        setMessage("");
+
+        setTimeout(() => {
+          formMess.style.opacity = "0";
+        }, 5000);
       });
 
-  };
-
-  const handleChange = (e) => {
-    setToSend({ ...toSend, [e.target.name]: e.target.value });
   };
 
 
@@ -40,8 +43,8 @@ export const ContactForm = () => {
         type='text'
         name='name'
         placeholder=' Votre Nom *'
-        value={toSend.name}
-        onChange={handleChange}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
         className='nomForm'
         required
       />
@@ -49,15 +52,15 @@ export const ContactForm = () => {
         type='text'
         name='company'
         placeholder=' Votre Entreprise'
-        value={toSend.company}
-        onChange={handleChange}
+        value={company}
+        onChange={(e) => setCompany(e.target.value)}
       />
       <input
         type='email'
         name='email'
         placeholder=' Votre Email *'
-        value={toSend.reply_to}
-        onChange={handleChange}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         className='emailForm'
         required
       />
@@ -65,14 +68,15 @@ export const ContactForm = () => {
         type='text'
         name='message'
         placeholder=' Votre Message *'
-        value={toSend.message}
-        onChange={handleChange}
+        value={message}
+        onChange={(e) => setMessage(e.target.value)}
         className='messageForm'
         required
       />
 
       <button type='submit' className='ButtonEnvoyer'>Envoyer</button>
-      <div className="form-message"></div>
+      <div className="form-message">
+      </div>
     </form>
   );
 };

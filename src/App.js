@@ -18,11 +18,11 @@ const App = () => {
           <Route path="/" exact element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" exact element={<Contact />} />
-          <Route path="/portFolio" exact element={<PortFolio />} />
-          <Route path="*" element={<NotFound />} />
-          <Route path="/mentionsLegales" element={<MentionsLegales />} />
-          <Route path="/CGV" element={<CGV />} />
+          <Route path="/portfolio" exact element={<PortFolio />} />
+          <Route path="/mentionslegales" element={<MentionsLegales />} />
+          <Route path="/cgv" element={<CGV />} />
           <Route path="/cookies" element={<Cookies />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </AnimatePresence>
     </BrowserRouter>
