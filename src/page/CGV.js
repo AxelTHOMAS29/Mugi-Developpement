@@ -16,7 +16,7 @@ const CGV = () => {
                     <br />Une fois le devis signé par les 2 parties le projet sera lancé avec un suivis pour le client jusqu'à livraison du site.
             </div>
             <div className='tarif'>
-                <img src='./img/tarif.png' alt="nos tarifs" target="_blank" className='imgTarif'>
+                <img src='./img/tarif.png' alt="tariff mugi développement" target="_blank" className='imgTarif'>
                 </img>
             </div>
             <Charte />

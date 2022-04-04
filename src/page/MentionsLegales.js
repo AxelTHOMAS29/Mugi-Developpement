@@ -16,8 +16,8 @@ const MentionsLegales = () => {
                     <br />Siège Social : St martin des champs 29600
                     <br />Numéro de téléphone : 06.58.69.05.37
                     <br />Hébergeur : Hostinger
-                    <br />Numéro de SIRET :
-                    <br />Numéro SIREN :
+                    <br />Numéro de SIRET : 911 436 459 00018
+                    <br />Numéro SIREN : 911 436 459
                 </span>
             </div>
             <Charte />

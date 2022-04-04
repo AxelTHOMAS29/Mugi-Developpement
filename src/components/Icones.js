@@ -46,10 +46,10 @@ const Icones = () => {
     return (
         <div className='groupeIcone'>
             <a href="https://www.linkedin.com/in/axel-thomas-" rel="noreferrer lien vers mon profil Linkedin" target="_blank" className='linkLinkedin icon'>
-                <FontAwesomeIcon icon={faLinkedin} alt='Linkedin' />
+                <FontAwesomeIcon icon={faLinkedin} alt='Mugi développement Linkedin' />
             </a>
-            <a href='https://twitter.com/MuguiDev' rel="noreferrer lien vers mon profil twitter" target='_blank' className='linkTwitter icon'>
-                <FontAwesomeIcon icon={faTwitter} alt='Twitter' />
+            <a href='https://twitter.com/MugiDevelopment?t=VWUO8Pl5_0OUudss4zOgYw&s=09' rel="noreferrer lien vers mon profil twitter" target='_blank' className='linkTwitter icon'>
+                <FontAwesomeIcon icon={faTwitter} alt='Mugi développement Twitter' />
             </a>
         </div>
     );
