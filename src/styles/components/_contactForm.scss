@@ -1,23 +1,33 @@
 .formulaire {
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   width: 100%; 
-  border-radius: 5px;
-  margin-top: 150px;
+
+  
+}
+
+.form-container {
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
 
   @media screen and (max-width: 1000px){
-    margin-top: 80px;
-    margin-bottom: 70px;
+    width: 60%;
   }
 
-  @media screen and (max-width: 511px){
-    margin-top: 90px;
+  @media screen and (max-width: 600px){
+    flex-direction: column;
   }
+}
 
-  @media screen and (max-width: 430px){
-    margin-top: 80px;
-  }
+.form-info-container, .form-message-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
 .textContactForm {
@@ -30,6 +40,14 @@
   @media screen and (max-width: 1000px){
     text-align: center;
     font-size: 140%;
+  }
+
+  @media screen and (max-width: 515px){
+    margin-top: 100px;
+  }
+
+  @media screen and (max-width: 490px){
+    margin-top: 20px;
   }
 }
 
@@ -45,16 +63,29 @@
   }
 }
 
-input, textarea {
+input {
   background-color: grey;
   border-radius: 2px;
   margin-bottom: 20px;
-  height: 30px;
-  width: 30%;
+  height: 40px;
+  width: 80%;
   cursor: context-menu;
 
   @media screen and (max-width: 1000px){
-    width: 80%;
+    width: 90%;
+  }
+}
+
+textarea {
+  background-color: grey;
+  border-radius: 2px;
+  height: 150px;
+  width: 100%;
+  cursor: context-menu;
+
+  @media screen and (max-width: 600px){
+    margin-bottom: 20px;
+    width: 90%;
   }
 }
 
@@ -71,7 +102,7 @@ input {
 
 .messageForm {
   resize: none;
-  height: 100px;
+  height: 160px;
   border-radius: 5px;
   border: none;
 }

@@ -38,45 +38,51 @@ export const ContactForm = () => {
 
   return (
     <form ref={form} onSubmit={sendEmail} className='formulaire'>
-      <p  className='textContactForm'>N'hésitez pas à nous contacter</p>
-      <input
-        type='text'
-        name='name'
-        placeholder=' Votre Nom *'
-        value={name}
-        onChange={(e) => setName(e.target.value)}
-        className='nomForm'
-        required
-      />
-      <input
-        type='text'
-        name='company'
-        placeholder=' Votre Entreprise'
-        value={company}
-        onChange={(e) => setCompany(e.target.value)}
-      />
-      <input
-        type='email'
-        name='email'
-        placeholder=' Votre Email *'
-        value={email}
-        onChange={(e) => setEmail(e.target.value)}
-        className='emailForm'
-        required
-      />
-      <textarea
-        type='text'
-        name='message'
-        placeholder=' Votre Message *'
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        className='messageForm'
-        required
-      />
-
+      <p className='textContactForm'>N'hésitez pas à nous contacter</p>
+      <div className='form-container'>
+        <div className='form-info-container'>
+          <input
+            type='text'
+            name='name'
+            placeholder=' Votre Nom *'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            className='nomForm'
+            required
+          />
+          <input
+            type='text'
+            name='company'
+            placeholder=' Votre Entreprise'
+            value={company}
+            onChange={(e) => setCompany(e.target.value)}
+          />
+          <input
+            type='email'
+            name='email'
+            placeholder=' Votre Email *'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            className='emailForm'
+            required
+          />
+        </div>
+        <div className='form-message-container'>
+          <textarea
+            type='text'
+            name='message'
+            placeholder=' Votre Message *'
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            className='messageForm'
+            required
+          />
+        </div>
+      </div>
       <button type='submit' className='ButtonEnvoyer'>Envoyer</button>
       <div className="form-message">
       </div>
+
     </form>
   );
 };

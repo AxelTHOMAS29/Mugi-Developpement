@@ -8,14 +8,17 @@
     height: 50px;
 
     @media screen and (max-width: 1000px){
-        position: none;
-        margin-top: 30px;
         width: 100%;
-        top: -10px;
         left: -10%;
+        top: auto;
         flex-direction: row;
         justify-content: space-evenly;
     }
+
+    @media screen and (max-width: 515px){
+       margin-bottom: 20px;
+      }
+      
 
     .icon {
         color: $color-1;
@@ -24,10 +27,13 @@
     .fa-linkedin, .fa-twitter {
         height: 80px;
         margin-bottom: 20px;
-        animation: animaFA 1s smooth;
         transition: 1s ease;
         position: absolute;
-        
+            
+        @media screen and (max-width: 365px){
+            margin-top: 20px;
+            height: 50px;
+           }
     }
 
     .fa-twitter {

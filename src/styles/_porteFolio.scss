@@ -1,112 +1,98 @@
 .portFolio {
     .folioGroupe {
         display: flex;
+        flex-direction: column;
         height: 100vh;
         width: 100%;
-
-        @media screen and (max-width: 1000px){
-           height: auto;
-           flex-direction: column;
-           align-items: center;
-          }
-    }
-
-    .folioGroupe1 {
-        display: flex;
-        flex-direction: column;
         justify-content: space-evenly;
-        width: 50%;
-        @media screen and (max-width: 1000px){
-            width: 100%;
-          }
-    }
-
-    .RiseToWar {
-        display: flex;
-        width: 100%;
-        justify-content: center;
         align-items: center;
 
-        @media screen and (max-width: 1000px){
-            margin-top: 90px;
-          }
+        @media screen and (max-width: 900px) {
+            height: auto;
+            margin-top: 10vh;
+        }
+        @media screen and (max-height: 450px) {
+            margin-top: 20vh;  
+        }
     }
 
-    .riseIMG {
+    .folioGroupe-container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         width: 100%;
-        object-fit: cover;
-        border-radius: 20px;
 
-        @media screen and (max-width: 430px){
-            height: 120px;
-          }
+        @media screen and (max-width: 900px) {
+            flex-wrap: wrap;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 90%;
+        }
     }
 
-    .reserviaIMG {
-        width: 100%;
+    .folio {
+        display: flex;
+        align-items: center;
+
+        @media screen and (max-width: 1000px) {
+            margin-top: 2vh;
+            margin-bottom: 2vh;  
+        }
+
+        @media screen and (max-height: 450px) {
+            margin-top: 5vh;
+            margin-bottom: 5vh;  
+        }
+    }
+
+    .folioIMG {
         height: 200px;
-        object-position: top;
+        width: 200px;
         object-fit: cover;
+        object-position: top;
         border-radius: 20px;
 
-        @media screen and (max-width: 430px){
-            height: 120px;
-          }
+        @media screen and (max-width: 400px) {
+            height: 150px;
+            width: 150px;  
+        }
+
+        @media screen and (min-width: 1700px) {
+            height: 300px;
+            width: 300px;  
+        }
+
+        &:hover {
+            border-radius: 50px;
+            transition: 1s;
+        }
     }
 
-    .riseTexte {
+    .Texte-Container {
         display: flex;
         flex-direction: column;
-        margin-left: 10%;
-    }
-
-    .reserviaTexte {
-        display: flex;
-        margin-left: 10%;
-    }
-
-    .linkRiseToWar {
-       width: 35%;
-    }
-
-    .linkReservia {
-        width: 35%;
-    }
-
-    .reservia {
-        display: flex;
-        justify-content: center;
         align-items: center;
-
-        @media screen and (max-width: 1000px){
-            margin-top: 90px;
-          }
+        
     }
 
-    .mugiPorte {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 50%;
-
-        @media screen and (max-width: 1000px){
-            width: 100%;
-          }
-
-          @media screen and (max-width: 1000px){
-            margin-bottom: 50px;
-            margin-top: 50px;
-          }
+    .mugiTexte {
+        flex-direction: row;
     }
 
-    .mugiIMG {
-        width: 35%;
-        margin-right: 10%;
-    }
+    .icon-React {
+        animation: reactAnim 3s infinite ;
+        -webkit-animation: reactAnim 3s infinite;
 
-    .folioIMG:hover {
-        border-radius: 40px;
-        transition: 1s;
-    }
+        @-webkit-keyframes reactAnim {
+            to {
+                transform: rotate(-180deg);
+            }
+        }
 
+        @keyframes reactAnim {
+            to {
+                transform: rotate(-360deg);
+            }
+        }
+    }
 }

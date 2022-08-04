@@ -12,7 +12,6 @@ const Home = () => {
             <Logo />
             <Navigation />
             <DynamicText />
-            <Acceuil />
             <CharteV2 />
         </motion.div>
     );

@@ -6,6 +6,10 @@
 
     .charte  {
         bottom: 0;
+
+        @media screen and (max-width: 430px){
+            bottom: auto;
+          }
     }
     
 }

@@ -5,7 +5,7 @@ import Logo from '../components/Logo';
 import Navigation from '../components/Navigation';
 import { motion } from "framer-motion";
 import { test1, transition } from "../animation/animation";
-import Charte from '../components/Charte';
+import CharteV2 from '../components/CharteV2';
 
 const Contact = () => {
     return (
@@ -13,7 +13,7 @@ const Contact = () => {
             <Logo />
             <Navigation />
             <ContactForm />
-            <Charte />
+            <CharteV2 />
             <Icones />
         </motion.div>
     );

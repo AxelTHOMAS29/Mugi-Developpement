@@ -1,14 +1,17 @@
 .dynamic-text {
+    height: 60vh;
     position: relative;
     display: flex;
     font-size: 65px;
-    margin-left: 25%;
-    margin-top: 150px;
+    //margin-left: 25%;
+    //margin-top: 150px;
+    justify-content: center;
+    align-items: center;
 
     @media screen and (max-width: 1000px){
-      margin-top: 200px;
-      margin-left: 10%;
-      margin-right: 0px;
+      //margin-top: 200px;
+      //margin-left: 10%;
+      //margin-right: 0px;
       width: 90%;
       flex-wrap: nowrap;
       text-align: center;
@@ -28,9 +31,11 @@
 
     @media screen and (max-width: 430px){
       margin-left: 0px;
-      margin-top: 90px;
-      font-size: 40px;
+     // margin-top: 90px;
+      //font-size: 40px;
+      height: 40vh;
       flex-direction: column;
+      justify-content: flex-start;
       align-items: center;
 
     }
@@ -38,7 +43,7 @@
   
     .simply {
       color: $color-1;
-      padding-left: 100px;
+      //padding-left: 100px;
 
       @media screen and (max-width: 1000px){
         font-size: 60%;

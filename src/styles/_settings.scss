@@ -26,6 +26,7 @@ body {
   background: $color-3;
   color: $white;
   font-family: $font-1;
+  overflow-x: hidden;
   // @include verticalCenter;
 }
 li {
@@ -35,3 +36,5 @@ li {
 textarea {
   resize: none;
 }
+
+.grecaptcha-badge { visibility: hidden; }
